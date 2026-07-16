@@ -2,8 +2,8 @@ application = [
     "Google - System Design",
     "Amazon - AI Integration",
     "Microsoft - Backend Dev",
-    "X - Frountend dev",
-    "Golden Seacs - Devops"
+    "X - Frontend dev",
+    "Golden Sachs - Devops"
 ]
 print("MY JOB APPLICATIONS: ")
 print("-"*30)
@@ -23,7 +23,7 @@ for app in application:
     break
   
 if found:
-  application.remove(re)
+  application.remove(found)
 else:    
   print("Not Found!")
 
