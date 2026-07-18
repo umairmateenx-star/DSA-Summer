@@ -33,18 +33,21 @@ while True:
      print(f"Applied to {n['company']}")
     else:
        print(f"Company Not Applied to {n['company']}") 
-       print(f"Number of companies Applied to {count}")
+  print(f"Number of companies Applied to {count}")
  elif v=="3":
   #Search Company
   print("-"*30)                  
   x=input("Search Company Name (Y/N)")
-  if x == 'y':
+  if x.lower() == 'y':
    search = input("Company: ")
   found = False
   for n in applications:
     if search.lower() in n["company"].lower():
        print(f"{n['company']} - {n['role']} - {n['status']}")
        found = True
+       print(f" No company found with '{search}'")
+    else:
+        print("Search cancelled")
         
  elif  v=="4":
  #Add new applications
