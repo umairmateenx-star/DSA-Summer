@@ -48,7 +48,7 @@ while True:
        print(f" No company found with '{search}'")
     else:
         print("Search cancelled")
-        
+
  elif  v=="4":
  #Add new applications
   c = input("Enter Company: ")
@@ -59,7 +59,7 @@ while True:
   applications.append(n)
   print(f"Added: {c} - {r} - {s}")
  elif  v=="5":
-             #Total Application
+ #Total Application
   total=0
   print("-"*30)
   for n in applications:
